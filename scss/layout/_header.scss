@@ -1,0 +1,564 @@
+nav {
+  position: relative;
+  z-index: 1000000;
+  position: sticky;
+  top: 0;
+  box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.1);
+
+  background-color: white;
+  .logo-brend {
+    @media (max-width: 807px) {
+      display: none;
+    }
+  }
+  .logo-brend2 {
+    display: none !important;
+    @media (max-width: 807px) {
+      display: block !important;
+    }
+  }
+  .nav-div {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .katalogmin {
+    background: rgba(112, 192, 91, 1);
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    transition: 1s;
+    &:hover {
+      box-shadow: inset 0px 50px 30px red;
+    }
+    @media (max-width: 544px) {
+      display: none;
+    }
+    div {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      p {
+        font-family: Rubik;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: center;
+        color: white;
+        @media (max-width: 1005px) {
+          display: none;
+        }
+      }
+    }
+  }
+  .imgsss {
+    display: flex;
+    gap: 10px;
+    @media (max-width: 544px) {
+      display: none;
+    }
+    img {
+      transition: 0.3s;
+      &:hover {
+        transform: scale(0.85);
+      }
+    }
+  }
+  form {
+    input {
+      height: 40px;
+      width: 374px;
+      padding: 8px;
+      gap: 10px;
+      border-radius: 4px;
+      border: 1px solid rgba(112, 192, 91, 1);
+      outline: none;
+      @media (max-width: 1005px) {
+        width: 324px;
+      }
+      @media (max-width: 683px) {
+        width: 100%;
+      }
+      @media (max-width: 544px) {
+        width: 250px;
+      }
+    }
+  }
+  .head-div2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    @media (max-width: 544px) {
+      display: none;
+    }
+    div {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      p {
+        @media (max-width: 1005px) {
+          display: none;
+        }
+      }
+    }
+    .asdd {
+      @media (max-width: 1005px) {
+        display: none;
+      }
+    }
+  }
+}
+header {
+  margin-top: 4px;
+  background-image: url(../../img/head-img/Group\ 7100.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  background-color: white;
+  img {
+    width: 100%;
+    @media (max-width: 400px) {
+      display: none;
+    }
+  }
+  p {
+    display: none !important;
+    @media (max-width: 400px) {
+      display: block !important;
+      text-align: center;
+      padding: 27px 0px;
+      //styleName: Desc/Text-Bold/M;
+      font-family: Rubik;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 27px;
+      text-align: center;
+    }
+  }
+}
+.АкцииАкции {
+  margin-top: 80px;
+  .Акции1_ {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h1 {
+      //styleName: Desc/Header/M;
+      font-family: Rubik;
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 54px;
+      text-align: left;
+      color: rgba(65, 65, 65, 1);
+    }
+    a {
+      text-decoration: none;
+      div {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        transition: 0.3s;
+        &:hover {
+          text-decoration: underline 4px red;
+        }
+        p {
+          //styleName: Desc/Text/S;
+          font-family: Rubik;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          text-align: center;
+          color: rgba(96, 96, 96, 1);
+        }
+      }
+    }
+  }
+}
+.gridss {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-between;
+  @media (max-width: 694px) {
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+  }
+  .grid-card {
+    width: 272px;
+    background-color: white;
+    @media (max-width: 819px) {
+      width: 224px !important;
+    }
+    @media (max-width: 694px) {
+      width: 272px;
+    }
+    @media (max-width: 472px) {
+      width: 160px !important;
+    }
+    img {
+      width: 100%;
+    }
+    .grid-card__DIV {
+      padding-top: 8px;
+      display: flex;
+      padding: 0px 8px;
+      justify-content: space-between;
+      .div_left {
+        h2 {
+          font-family: Rubik;
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 27px;
+          text-align: left;
+          color: rgba(65, 65, 65, 1);
+        }
+        p {
+          //styleName: Desc/Text/XS;
+          font-family: Rubik;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 18px;
+          text-align: left;
+          color: rgba(191, 191, 191, 1);
+        }
+      }
+      .div_right {
+        h3 {
+          //styleName: Desc/Text/S;
+          font-family: Rubik;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          text-align: left;
+          color: rgba(96, 96, 96, 1);
+        }
+        p {
+          //styleName: Desc/Text/XS;
+          font-family: Rubik;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 18px;
+          text-align: left;
+          color: rgba(191, 191, 191, 1);
+        }
+      }
+      h6 {
+        //styleName: Desc/Text-Bold/M;
+        font-family: Rubik;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 27px;
+        text-align: left;
+        color: rgba(65, 65, 65, 1);
+      }
+    }
+  }
+  .div-end-p {
+    margin-left: 8px;
+    max-width: 256px;
+    //styleName: Desc/Text/S;
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: rgba(65, 65, 65, 1);
+  }
+  .yulduzlar {
+    margin-left: 8px;
+    display: flex;
+    gap: 4px;
+  }
+  .vkarzinu {
+    margin: 8px;
+    width: 94%;
+    height: 40px;
+    border: none;
+    background: none;
+    border-radius: 3px;
+    color: rgba(112, 192, 91, 1);
+    border: 1px solid rgba(112, 192, 91, 1);
+    transition: 0.3s;
+    &:hover {
+      box-shadow: inset 0px 42px 0px rgba(255, 102, 51, 1);
+      color: white;
+      border: none;
+    }
+  }
+}
+.whither {
+  @media (max-width: 1101px) {
+    display: none !important;
+  }
+  @media (max-width: 694px) {
+    display: block !important;
+  }
+}
+@media (max-width: 472px) {
+  .o_o {
+    padding-top: 70px !important;
+  }
+  .o__o {
+    padding-top: 25px;
+  }
+}
+.Акции1_ {
+  margin-top: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  h1 {
+    //styleName: Desc/Header/M;
+    font-family: Rubik;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 54px;
+    text-align: left;
+    color: rgba(65, 65, 65, 1);
+  }
+  a {
+    text-decoration: none;
+    div {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: 0.3s;
+      &:hover {
+        text-decoration: underline 4px red;
+      }
+      p {
+        //styleName: Desc/Text/S;
+        font-family: Rubik;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: center;
+        color: rgba(96, 96, 96, 1);
+      }
+    }
+  }
+}
+.предло__ {
+  margin-top: 120px;
+  margin-bottom: 40px;
+  //styleName: Desc/Header/M;
+  font-family: Rubik;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 54px;
+  text-align: left;
+  color: rgba(65, 65, 65, 1);
+}
+.karti {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media (max-width: 841px) {
+    flex-direction: column;
+  }
+  .kaerr1 {
+    box-shadow: 0px 8px 16px 0px rgba(202, 147, 96, 0.5);
+    border-radius: 4px;
+    width: 589px;
+    background-color: rgba(252, 213, 186, 1);
+    position: relative;
+    @media (max-width: 725px) {
+      max-width: 289px;
+      overflow: hidden;
+    }
+    h1 {
+      padding-top: 30px;
+      padding-left: 49px;
+      max-width: 400px;
+      //styleName: Desc/Header/S;
+      font-family: Rubik;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 36px;
+      text-align: left;
+      @media (max-width: 1136px) {
+        width: 174px;
+        font-family: Rubik;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 27px;
+        text-align: left;
+        position: relative;
+        z-index: 11;
+      }
+    }
+    p {
+      padding-top: 6px;
+      padding-left: 49px;
+      padding-bottom: 44px;
+      max-width: 300px;
+      //styleName: Desc/Text/S;
+      font-family: Rubik;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: left;
+      @media (max-width: 1136px) {
+        width: 174px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: left;
+        position: relative;
+        z-index: 11;
+      }
+    }
+    img {
+      position: absolute;
+      top: 0px;
+      right: -5px;
+      transition: 0.3s;
+      &:hover {
+        transform: rotate(-16deg);
+      }
+      @media (max-width: 1136px) {
+        right: -70px;
+      }
+    }
+  }
+}
+.kaerr2 {
+  background-color: rgba(229, 255, 222, 1);
+  border-radius: 4px;
+  width: 589px;
+  position: relative;
+  @media (max-width: 725px) {
+    max-width: 389px;
+    overflow: hidden;
+  }
+  h1 {
+    padding-top: 30px;
+    padding-left: 49px;
+    max-width: 400px;
+    //styleName: Desc/Header/S;
+    font-family: Rubik;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: left;
+    position: relative;
+    z-index: 11;
+    @media (max-width: 340px) {
+      width: 200px;
+    }
+  }
+  p {
+    padding-top: 6px;
+    padding-left: 49px;
+    padding-bottom: 44px;
+    max-width: 300px;
+    //styleName: Desc/Text/S;
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    position: relative;
+    z-index: 11;
+  }
+  img {
+    position: absolute;
+    top: 0px;
+    right: -5px;
+    transition: 0.3s;
+  }
+}
+.nashimagazin {
+  margin-top: 100px;
+  font-family: Rubik;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: left;
+}
+.grid-cardend {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+  @media (max-width: 1189px) {
+    justify-content: space-evenly;
+  }
+  @media (max-width: 694px) {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+  }
+  .end__element {
+    width: 376px;
+    background-color: white;
+    @media (max-width: 1189px) {
+      width: 224px;
+    }
+    @media (max-width: 694px) {
+      width: 100%;
+    }
+    img {
+      width: 100%;
+    }
+    p {
+      font-family: Rubik;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+      text-align: left;
+      color: rgba(143, 143, 143, 1);
+    }
+    h3 {
+      padding: 8px;
+      font-family: Rubik;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 27px;
+      text-align: left;
+      @media (max-width: 1189px) {
+        //styleName: Mob/Header/XS;
+        font-family: Rubik;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: left;
+      }
+    }
+    h5 {
+      padding: 8px;
+      //styleName: Desc/Text/S;
+      font-family: Rubik;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: left;
+      color: rgba(65, 65, 65, 1);
+      @media (max-width: 1189px) {
+        //styleName: Mob/Text/S;
+        font-family: Rubik;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: left;
+      }
+    }
+    button {
+      margin-left: 8px;
+      width: 150px;
+      height: 40px;
+      padding: 8px;
+      gap: 8px;
+      border-radius: 4px;
+      border: none;
+      background: rgba(229, 255, 222, 1);
+      color: rgba(112, 192, 91, 1);
+      transition: 0.3s;
+      &:hover {
+        color: white;
+        box-shadow: inset 0px 41px rgba(112, 192, 91, 1);
+      }
+    }
+  }
+}
