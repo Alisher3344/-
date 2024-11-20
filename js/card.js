@@ -1,48 +1,35 @@
-const AboutRow = document.querySelector(".cardlar");
+let AboutRow = document.querySelector(".cardlar");
+let SerachEl=document.querySelector(".inputintt");
 
-// let card = document.createElement("div");
-// card.className = "card";
-
-// let cardinbox = document.createElement("div");
-// cardinbox.className = "bla";
-
-// let text = document.createElement("p");
-// text.textContent = "xleb";
-
-// cardinbox.append(text);
-
-// card.append(cardinbox);
-
-// cards.append(card);
-
-function getProductsCard(product) {
-  const cardAbout = document.createElement("div");
-  cardAbout.className = "card";
-
-  const cardBody = document.createElement("div");
-  cardBody.className = "cardinbox";
-
-  const cardImg = document.createElement("img");
-  cardImg.src = `${product.images[0]}`;
-  cardImg.alt = `${product.name}`;
-
-  const cardFooter = document.createElement("div");
-  cardFooter.className = "bla";
-
-  const cardTitle = document.createElement("h1");
-  const cardTitleText = document.createTextNode(` ${product.name}`);
-  cardTitle.appendChild(cardTitleText);
-
-  cardBody.prepend(cardTitle);
-
-  cardBody.prepend(cardImg, cardFooter);
-
-  cardAbout.append(cardBody);
-
-  return cardAbout;
+function getProduct({name,images}){
+  return `
+   <div class=card>
+    <div class="cardinbox">
+<img src="${images[1]}" alt="${name}">
+<div class="bla">
+    <h1>${name}</h1>
+</div>
+    </div>
+</div>
+  `
 }
 
-products.map((product) => {
-  let card = getProductsCard(product);
-  AboutRow.append(card);
-});
+function getelempro(data=products) {
+  AboutRow.innerHTML=""
+  data.forEach((product)=>{
+    AboutRow.innerHTML +=getProduct(product);
+  })
+}
+getelempro();
+
+SerachEl.addEventListener("keyup",function(){
+  let search=this.value.trim().toLowerCase();
+  let SerachEl=products.filter((product)=>
+  product.name.toLowerCase().includes(search)
+);
+getelempro(SerachEl);
+})
+
+// setTimeout(() => {
+//   load.classList.add("loading-none");
+// }, 3000);
