@@ -68,6 +68,7 @@ body {
   animation-name: top;
   animation-duration: 2s;
   animation-iteration-count: infinite;
+  scroll-behavior: smooth;
   @keyframes top {
   50%{
    bottom: 50px;

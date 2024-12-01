@@ -16,9 +16,14 @@ function getProduct({name,images}){
 
 function getelempro(data=products) {
   AboutRow.innerHTML=""
+ if (data.length !==0) {
   data.forEach((product)=>{
     AboutRow.innerHTML +=getProduct(product);
-  })
+  }) 
+ }
+else{
+  AboutRow.innerHTML=`<h1 style="color: red;">NO CARDS</h1>`
+}
 }
 getelempro();
 

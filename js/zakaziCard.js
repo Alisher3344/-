@@ -26,9 +26,14 @@ function funcdd({price,description,images}) {
 }
 function getelempro(data=products) {
   CardBox.innerHTML=""
-  data.forEach((product)=>{
-    CardBox.innerHTML +=funcdd(product);
-  })
+  if (data.length !==0) {
+    data.forEach((product)=>{
+      CardBox.innerHTML +=funcdd(product);
+    }) 
+   }
+  else{
+    CardBox.innerHTML=`<h1 style="color: red;">NO CARDS</h1>`
+  }
 }
 getelempro();
 products.forEach((product)=>{

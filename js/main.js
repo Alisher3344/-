@@ -9,13 +9,14 @@
 // alert(`Siz parolni ${sum} martta kirittingiz`);
 AOS.init();
 let a=document.querySelector(".loading_");
-console.log(a);
 
 setTimeout(() => {
   a.classList.add("loading-none");
 }, 4000);
 
 const backtop = document.querySelector(".backtop");
+console.log(backtop);
+
 console.log(backtop);
 
 window.onscroll = () => {
