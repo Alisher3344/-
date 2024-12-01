@@ -1,9 +1,10 @@
 let AboutRow = document.querySelector(".cardlar");
 let SerachEl=document.querySelector(".inputintt");
 
-function getProduct({name,images}){
+function getProduct({id,name,images}){
   return `
-   <div class=card>
+   <a href="../page/pordackt.html?product=${id}">
+  <div class="card">
     <div class="cardinbox">
 <img src="${images[1]}" alt="${name}">
 <div class="bla">
@@ -11,6 +12,7 @@ function getProduct({name,images}){
 </div>
     </div>
 </div>
+</a>
   `
 }
 

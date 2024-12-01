@@ -1,7 +1,7 @@
 let CardBox=document.querySelector(".cardbox");
 let inputSearch=document.querySelector(".inputintt")
 
-function funcdd({price,description,images}) {
+function funcdd({id,price,description,images}) {
     return `
         <div class="element">
          <div class="el_body">
@@ -18,11 +18,15 @@ function funcdd({price,description,images}) {
     <img src="../img/home-body/star.svg" alt="No img?">
     <img src="../img/home-body/star.svg" alt="No img?">
   </div>
-  <button class="vkarzinu">В корзину</button>
+  <button onclick"getCardTotal("${id})" class="vkarzinu">В корзину${id}</button>
+  
 </div>
 
     </div>
     `
+}
+function getCardTotal(id){
+  console.log(id);
 }
 function getelempro(data=products) {
   CardBox.innerHTML=""
