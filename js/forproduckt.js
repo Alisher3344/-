@@ -6,7 +6,7 @@ let check = products.find((pro)=>pro.id === +urlproduct)
 
 // console.log(forproelement(check));
 // console.log(BigBitel);
-console.log(BigBitel.innerHTML+=`<div class="child_1">
+BigBitel.innerHTML+=`<div class="child_1">
     <div class="child_1_1">
       <img src="${check.images[0]}" alt="${check.name}">
       <img src="${check.images[1]}" alt="${check.name}">
@@ -30,4 +30,4 @@ console.log(BigBitel.innerHTML+=`<div class="child_1">
    </button>
 <p>${check.description}</p>
 </div>`
-);
+;

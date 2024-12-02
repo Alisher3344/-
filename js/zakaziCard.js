@@ -18,15 +18,14 @@ function funcdd({id,price,description,images}) {
     <img src="../img/home-body/star.svg" alt="No img?">
     <img src="../img/home-body/star.svg" alt="No img?">
   </div>
-  <button onclick"getCardTotal("${id})" class="vkarzinu">В корзину${id}</button>
-  
+  <button onclick="getelem(${id})" class="vkarzinu push_elem">В корзину${id}</button>
 </div>
 
     </div>
     `
 }
-function getCardTotal(id){
-  console.log(id);
+function getelem(id) {
+  let addkarzinka=(id);
 }
 function getelempro(data=products) {
   CardBox.innerHTML=""
@@ -39,7 +38,7 @@ function getelempro(data=products) {
     CardBox.innerHTML=`<h1 style="color: red;">NO CARDS</h1>`
   }
 }
-getelempro();
+// getelempro();
 products.forEach((product)=>{
     CardBox.innerHTML +=funcdd(product);
   })

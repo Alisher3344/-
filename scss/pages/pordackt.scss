@@ -7,6 +7,7 @@ display: flex;
     img{
         width: 100%;
         height: 100px;
+        object-fit: contain;
     }
 }
 .child_1_2{
@@ -15,6 +16,7 @@ display: flex;
 img{
     width: 100%;
     height: 100%;
+    object-fit: contain;
 }
 }
     }
